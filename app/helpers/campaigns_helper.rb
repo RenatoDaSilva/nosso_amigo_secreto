@@ -1,5 +1,5 @@
 module CampaignsHelper
-  def open_number(campaign)
+  def count_opened_emails(campaign)
     "#{campaign.count_opened}/#{campaign.members.count}"
   end
 end
