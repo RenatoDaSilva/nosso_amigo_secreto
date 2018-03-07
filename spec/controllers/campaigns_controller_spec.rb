@@ -18,7 +18,7 @@ RSpec.describe CampaignsController, type: :controller do
 
   describe "GET #show" do
 
-    context "campaing exists" do
+    context "campaign exists" do
       context "User is the owner of the campaign" do
         it "Returns success" do
           campaign = create(:campaign, user: @current_user)
@@ -107,7 +107,7 @@ RSpec.describe CampaignsController, type: :controller do
         expect(response).to have_http_status(:success)
       end
 
-      it "Campaign have the new attributes" do
+      it "Campaign has the new attributes" do
         expect(Campaign.last.title).to eq(@new_campaign_attributes[:title])
         expect(Campaign.last.description).to eq(@new_campaign_attributes[:description])
       end
@@ -132,7 +132,7 @@ RSpec.describe CampaignsController, type: :controller do
         @campaign = create(:campaign, user: @current_user)
       end
 
-      context "Has more than two members" do
+      context "There are more than two members" do
         before(:each) do
           create(:member, campaign: @campaign)
           create(:member, campaign: @campaign)
@@ -145,7 +145,7 @@ RSpec.describe CampaignsController, type: :controller do
         end
       end
 
-      context "No more than two members" do
+      context "There are no more than two members" do
         before(:each) do
           create(:member, campaign: @campaign)
           post :raffle, params: { id: @campaign.id }
