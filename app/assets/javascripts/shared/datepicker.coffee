@@ -17,5 +17,6 @@ $(document).on 'turbolinks:load', ->
     close: 'Ok',
     closeOnSelect: true,
     format: 'dd/mm/yyyy'
+    formatSubmit: 'dd/mm/yyyy'
   });
   return
