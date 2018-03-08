@@ -20,7 +20,7 @@
                     <label for="title" class="<%= (@campaign.event_date)? 'active' : '' %>">Data</label>
                   </div>
                   <div class="col s12 l2 input-field">
-                    <%= f.text_field :event_hour %>
+                    <%= f.text_field :event_hour, class: 'timepicker' %>
                     <label for="title" class="<%= (@campaign.event_hour)? 'active' : '' %>">Hora</label>
                   </div>
                   <div class="col s12 l3 input-field">
