@@ -19,6 +19,8 @@ gem 'sass-rails', '~> 5.0'
 gem 'sidekiq'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
+gem 'inky-rb', require: 'inky'
+gem 'premailer-rails'
 
 group :test do
   gem "factory_bot_rails"
