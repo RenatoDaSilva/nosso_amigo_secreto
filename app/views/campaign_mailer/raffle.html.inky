@@ -6,7 +6,7 @@
     <columns large="2">
     </columns>
     <columns large="1" class="center">
-      <img src="http://localhost:3000/assets/images/logo.png" alt="">
+      <img src="http://localhost:3000/assets/logo.png" alt="">
     </columns>
     <columns large="8">
       <h4>Nosso Amigo Secreto</h4>
