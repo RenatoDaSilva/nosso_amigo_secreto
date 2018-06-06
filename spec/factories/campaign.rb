@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :campaign do
-    title         { FFaker::Lorem.word }
-    description   { FFaker::Lorem.sentence }
+    title         { "Nova Campanha" }
+    description   { "Descreva sua campanha..." }
     user
     status        { :pending }
     locale        { "#{FFaker::Address.city}, #{FFaker::Address.street_address}"}
